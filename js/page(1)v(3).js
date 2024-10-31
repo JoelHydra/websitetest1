@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     children[i].classList.remove('no-animations'); // Add new class
                 }
                 button.textContent = "High Detail Mode";
-                container.classList.add('High-detail-mode');
+                container.classList.add('high-detail-mode');
                 container.classList.remove('no-detail-mode');
             }
 
