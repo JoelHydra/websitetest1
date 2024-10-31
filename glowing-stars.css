@@ -1,0 +1,690 @@
+
+.title{
+    position: absolute;
+    bottom: 6%;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+.logo-container{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+.logo{
+    position: relative;
+    max-width: 250px;
+    max-height: 250px;
+}
+.title-container{
+    position: relative;
+    width: 700px;
+    height: 200px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+.title-box{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: -webkit-linear-gradient(
+    right,
+    #e5dada,
+    #fcbee1,
+    #c1afeb,
+    #62a5a5,
+    #8485cd,
+    #e5dada
+    );
+    animation: color-shift 180s linear infinite;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 50px;
+}
+.no-animations{
+    animation: none !important;
+    transition: none !important;
+    opacity: 0 !important;
+}
+.low-detail-mode{
+    opacity: 1;
+}
+.high-detail-mode{
+    opacity: 1;
+}
+#low-detail-mode{
+    position: fixed;
+    bottom: 91%;
+    right: 89%;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 10px white;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+}
+
+.star-container{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 2s linear infinite;
+}
+.star-container-1{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around 10s linear infinite;
+}
+.star-container-2{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -2.5s linear infinite;
+}
+.star-container-3{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around 10s -5s linear infinite;
+}
+.star-container-4{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -7.5 linear infinite;
+}
+.star-container-5{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -8.75s linear infinite;
+}
+.star-container-6{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -6.25s linear infinite;
+}
+.star-container-7{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -3.75s linear infinite;
+}
+.star-container-8{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(1px);
+    animation: circle-around-2 10s -1.25s linear infinite;
+}
+@keyframes circle-around{
+    from{
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+@keyframes circle-around-2{
+    from{
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+@keyframes circle-around-3{
+    from{
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+.star-giant-1{
+    position: absolute;
+    max-width: 400px;
+    max-height: 400px;
+    filter: blur(10px);
+}
+.star-giant-2{
+    position: absolute;
+    max-width: 250px;
+    max-height: 250px;
+    filter: blur(3px);
+}
+.star-giant-3{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(0px);
+    animation: rotate 6s linear infinite;
+}
+.star-giant-6-a{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(10px);
+    animation: rotate 6s -4.5s linear infinite,
+    glowing-2 4s linear infinite;
+}
+.star-giant-4{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(0px);
+    animation: rotate 6s -1.5s linear infinite;
+}
+.star-giant-6-b{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(10px);
+    animation: rotate 6s -4.5s linear infinite,
+    glowing-2 4s linear infinite;
+}
+.star-giant-5{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(0px);
+    animation: rotate 6s -3s linear infinite;
+}
+.star-giant-6-c{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(10px);
+    animation: rotate 6s -4.5s linear infinite,
+    glowing-2 4s linear infinite;
+}
+.star-giant-6{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(0px);
+    animation: rotate 6s -4.5s linear infinite;
+}
+.star-giant-6-d{
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    filter: blur(10px);
+    animation: rotate 6s -4.5s linear infinite,
+    glowing-2 4s linear infinite;
+}
+.test-container{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: circle-around-3 4s linear infinite;
+}
+.test{
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    filter: blur(10px);
+}
+.test-a{
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    animation: rotate 2s -3s linear infinite;
+}
+.test-container-2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: circle-around-3 4s -1s linear infinite;
+}
+.test-2{
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    filter: blur(10px);
+}
+.test-2-a{
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    animation: rotate 2s linear infinite;
+}
+.test-container-3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: circle-around-3 4s -2s linear infinite;
+}
+.test-container-4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: circle-around-3 4s -3s linear infinite;
+}
+@keyframes glowing-2{
+    0%{
+        filter: blur(6px);
+    }
+    50%{
+        filter: blur(15px);
+    }
+    100%{
+        filter: blur(6px);
+    }
+}
+.star{
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 1;
+    filter: blur(3px);
+}
+.small-star-1{
+    position: absolute;
+    max-width: 20px;
+    max-height: 20px; 
+}
+.glowing-circle-giant{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px inset rgb(255, 255, 255);
+    filter: blur(80px);
+    animation: glowing 10s ease infinite;
+}
+.glowing-circle-giant-2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    box-shadow: 0px 0px 10px inset rgb(255, 255, 255);
+    filter: blur(180px);
+    animation: glowing 5s ease infinite;
+}
+.glowing-circle-giant-3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    box-shadow: 0px 0px 10px inset rgb(255, 255, 255);
+    filter: blur(180px);
+    animation: glowing 5s -1.25s ease infinite;
+}
+.glowing-circle-giant-4{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    box-shadow: 0px 0px 10px inset rgb(255, 255, 255);
+    filter: blur(180px);
+    animation: glowing 5s -2.5s ease infinite;
+}
+.glowing-circle-giant-5{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    box-shadow: 0px 0px 10px inset rgb(255, 255, 255);
+    filter: blur(180px);
+    animation: glowing 5s -3.75s ease infinite;
+}
+.small-glowing-circle{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white;
+}
+@keyframes glowing{
+    0%{
+        box-shadow: 0px 0px 20000px inset white;
+    }
+    20%{
+        box-shadow: 0px 0px 20000px inset rgb(255, 0, 153);
+    }
+    40%{
+        box-shadow: 0px 0px 20000px inset rgb(225, 0, 255);
+    }
+    60%{
+        box-shadow: 0px 0px 20000px inset rgb(0, 255, 225);
+    }
+    80%{
+        box-shadow: 0px 0px 20000px inset rgb(51, 0, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 20000px inset white;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.general-comet-container{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: general-comet 6s linear infinite;
+}
+.small-comet-tail{
+    position: absolute;
+    width: 4px;
+    height: 25px;
+    box-shadow: 0px 0px 10px rgb(0, 255, 238);
+    background: linear-gradient(
+        45deg,
+        #4a99ff,
+        #4a99ff,
+        #1d7fff,
+        #1d7fff,
+        #004aab,
+        #003274,
+        #0e005a,
+        #0e005a
+    );
+    border-radius: 70%;
+    filter: blur(1px);
+    transform: rotate(45deg);
+}
+
+.general-comet-container:nth-child(1){
+    bottom: 70%;
+    right: 75%;
+    animation-duration: 3s;
+}
+.general-comet-container:nth-child(2){
+    bottom: 90%;
+    right: 40%;
+    animation-duration: 4s;
+}
+.general-comet-container:nth-child(3){
+    bottom: 60%;
+    right: 20%;
+    animation-duration: 4.5s;
+}
+.general-comet-container:nth-child(4){
+    bottom: 40%;
+    right: 10%;
+    animation-duration: 4s;
+}
+.general-comet-container:nth-child(5){
+    bottom: 90%;
+    right: 55%;
+    animation-duration: 4.5s;
+}
+.general-comet-container:nth-child(6){
+    bottom: 100%;
+    right: 20%;
+    animation-duration: 5.5s;
+}
+.general-comet-container:nth-child(7){
+    bottom: 80%;
+    right: -1%;
+    animation-duration: 6s;
+}
+.general-comet-container:nth-child(8){
+    bottom: 70%;
+    right: -10%;
+    animation-duration: 5s;
+}
+@keyframes general-comet{
+    0%{
+        transform: translate(0px, 0px);
+        opacity: 0;
+    }
+    25%{
+        transform: translate(-150px, 150px);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(-300px, 300px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.comet-container-1{
+    position: fixed;
+    bottom: 99%;
+    left: 99%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: comet-1 5s linear infinite;
+    filter: blur(1px);
+}
+.comet-container-2{
+    position: fixed;
+    bottom: 99%;
+    left: 79%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: comet-2 4s linear infinite;
+    filter: blur(2px);
+}
+.comet-container-3{
+    position: fixed;
+    bottom: 99%;
+    left: 49%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: comet-3 8s linear infinite;
+    filter: blur(1px);
+}
+.comet-container-4{
+    position: fixed;
+    bottom: 99%;
+    left: 19%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: comet-4 6s linear infinite;
+    filter: blur(1px);
+}
+.comet-container-5{
+    position: fixed;
+    bottom: 49%;
+    left: 99%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: comet-5 3s linear infinite;
+    filter: blur(2px);
+}
+
+@keyframes comet-1{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    100%{
+        transform: translate(-3000px, 3000px)
+    }
+}
+@keyframes comet-2{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    100%{
+        transform: translate(-3000px, 3000px)
+    }
+}
+@keyframes comet-3{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    100%{
+        transform: translate(-2000px, 2000px)
+    }
+}
+@keyframes comet-4{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    100%{
+        transform: translate(-2750px, 2750px)
+    }
+}
+@keyframes comet-5{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    100%{
+        transform: translate(-1000px, 1000px)
+    }
+}
+.comet-tail{
+    position: absolute;
+    width: 4px;
+    height: 150px;
+    box-shadow: 0px 0px 10px rgb(0, 255, 238);
+    background: linear-gradient(
+        45deg,
+        #4a99ff,
+        #4a99ff,
+        #1d7fff,
+        #1d7fff,
+        #004aab,
+        #003274,
+        #0e005a,
+        #0e005a
+    );
+    border-radius: 70%;
+    filter: blur(1px);
+    transform: rotate(45deg);
+}
+.comet-head{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 90px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 30px rgb(0, 174, 255);
+    filter: blur(25px);
+    animation: shine 3s ease infinite;
+}
+@keyframes shine{
+    0%{
+        transform: scale(1) rotate(45deg);
+    }
+    50%{
+        transform: scale(2) rotate(45deg);
+    }
+    100%{
+        transform: scale(1) rotate(45deg);
+    }
+}
+.comet-glow{
+    position: absolute;
+    top: 72px;
+    right: 72px;
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10000px rgb(0, 174, 255);
+    filter: blur(14px);
+    animation: pulse 4s ease infinite;
+}
+@keyframes pulse{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
